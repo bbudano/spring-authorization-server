@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>oauth2-authorization-server</module>
     </modules>
 
 </project>
