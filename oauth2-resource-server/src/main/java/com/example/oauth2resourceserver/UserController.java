@@ -6,17 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-public class TestController {
+public class UserController {
 
-    private final TestService testService;
+    private final UserService userService;
 
-    public TestController(TestService testService) {
-        this.testService = testService;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping("/me")
     public Map<String, Object> me() {
-        return testService.me();
+        return userService.me();
     }
 
 }

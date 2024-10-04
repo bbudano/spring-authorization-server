@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @Service
-public class TestService {
+public class UserService {
 
     @PreAuthorize("hasAuthority('SCOPE_user.read')")
     public Map<String, Object> me() {

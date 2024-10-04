@@ -17,9 +17,9 @@ public class Oauth2AuthorizationServerApplication {
 	@Bean
 	UserDetailsService userDetailsService() {
 		var user = User
-				.withUsername("user")
+				.withUsername("bernard")
 				// password is pw
-				.password("{bcrypt}$2a$10$IZYr0/fwFkMgs6mQ/1Sxe.efjnraHOcGmLqzvMxH/Q4VYh2amegkG")
+				.password("{noop}pw")
 				.roles("user")
 				.build();
 
